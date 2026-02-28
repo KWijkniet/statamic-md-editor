@@ -1,0 +1,26 @@
+{
+    "name": "kwijkniet/md-editor",
+    "description": "A markdown editor addon for Statamic",
+    "type": "statamic-addon",
+    "require": {
+        "statamic/cms": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kwijkniet\\MdEditor\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "MD Editor",
+            "description": "A markdown editor addon for Statamic"
+        },
+        "laravel": {
+            "providers": [
+                "Kwijkniet\\MdEditor\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
